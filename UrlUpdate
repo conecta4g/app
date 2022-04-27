@@ -1,11 +1,11 @@
 {
   "Version": "1.0.2",
   "ReleaseNotes": "UPDATE 1.0.2",
-  "UrlUpdate": "https://conecta4g.github.io/UrlUpdate",
-  "Sms": "https://conecta4g.github.io/UrlSms",
+  "UrlUpdate": "https://conecta4g.github.io/app/UrlUpdate",
+  "Sms": "https://conecta4g.github.io/app/UrlSms",
   "EmailFeedback": "conecta4gnet@gmail.com",
   "UrlContato": "https://t.me/conecta4gnet",
-  "UrlTermos": "https://conecta4g.github.io/termos.html",
+  "UrlTermos": "https://conecta4g.github.io/app/termos.html",
   "Udp": [
     {
       "Porta": "7300"
@@ -14,8 +14,8 @@
   "Servers": [
     {
       "Name": "SERVIDOR",
-      "TYPE": "",
-      "FLAG": "",
+      "TYPE": "premium",
+      "FLAG": "br.png",
       "ServerIP": "br.conecta4g.net",
       "CheckUser": "http://br.conecta4g.net:8888/checkUser",
       "ServerPort": "22",
