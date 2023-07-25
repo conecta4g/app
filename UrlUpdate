@@ -1,12 +1,12 @@
 {
-    "Version": "1.0.9",
-    "ReleaseNotes": "UPDATE 1.0.9",
+    "Version": "1.0.10",
+    "ReleaseNotes": "UPDATE 1.0.10",
     "UrlUpdate": "https://conecta4g.github.io/app/UrlUpdate",
     "Sms": "https://conecta4g.github.io/app/UrlSms",
     "EmailFeedback": "conecta4gnet@gmail.com",
-    "UrlContato": "https://t.me/conecta4gnet",
+    "UrlContato": "https://t.me/twossh",
     "UrlTermos": "https://conecta4g.github.io/app/termos.html",
-    "CheckUser": "true",
+    "CheckUser": "false",
     "Udp": [
         {
             "Porta": "7300"
@@ -17,8 +17,8 @@
             "Name": "SERVIDOR",
             "TYPE": "premium",
             "FLAG": "br.png",
-            "ServerIP": "br.twossh.com.br",
-            "CheckUser": "http://br.twossh.com.br:5000/checkUser",
+            "ServerIP": "127.0.0.1",
+            "CheckUser": "",
             "ServerPort": "22",
             "SSLPort": "443",
             "USER": "",
@@ -29,7 +29,7 @@
         {
             "Name": "VIVO EASY [01]",
             "FLAG": "vivo",
-            "Payload": "[method] / [protocol][crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+            "Payload": "GET / [protocol][crlf]Host: br.twossh.com.br[crlf]Upgrade: websocket[crlf][crlf]",
             "SNI": "",
             "TlsIP": "",
             "ProxyIP": "104.18.7.41",
@@ -39,7 +39,7 @@
         {
             "Name": "VIVO EASY [02]",
             "FLAG": "vivo",
-            "Payload": "[method] / [protocol][crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+            "Payload": "GET / [protocol][crlf]Host: br.twossh.com.br[crlf]Upgrade: websocket[crlf][crlf]",
             "SNI": "",
             "TlsIP": "",
             "ProxyIP": "104.18.6.41",
@@ -49,12 +49,32 @@
         {
             "Name": "VIVO EASY [03]",
             "FLAG": "vivo",
-            "Payload": "[method] / [protocol][crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-            "SNI": "[app_host]",
+            "Payload": "GET / [protocol][crlf]Host: br.twossh.com.br[crlf]Upgrade: websocket[crlf][crlf]",
+            "SNI": "br.twossh.com.br",
             "TlsIP": "104.18.6.80",
             "ProxyIP": "",
             "ProxyPort": "",
             "Info": "Tlsws"
+        },
+        {
+            "Name": "VIVO PRE [01]",
+            "FLAG": "vivo",
+            "Payload": "[delay_split][crlf]GET / HTTP/1.1[lf]Host: 209.14.68.176[lf]Upgrade: websocket[lf][lf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "209.14.68.176",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "VIVO CDN [01]",
+            "FLAG": "vivo",
+            "Payload": "GET / [protocol][crlf]Host: d2apxtlb67jt22.cloudfront.net[crlf]Connection: Upgrade[crlf]Upgrade: Websocket[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "cdnssl.clicktale.net",
+            "ProxyPort": "80",
+            "Info": "Proxy"
         },
         {
             "Name": "FLUKE [01]",
